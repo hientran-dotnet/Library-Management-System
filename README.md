@@ -58,7 +58,7 @@ Library-Management-System/
 
 ## 👤 Tác giả
 
-- Họ tên: Tran Minh Hien
+- Name: Tran Minh Hien
 - Github: [hientran-dotnet](https://github.com/hientran-dotnet)
 - Linkedin: [HienTran](https://www.linkedin.com/in/tranminhhien/)
 
