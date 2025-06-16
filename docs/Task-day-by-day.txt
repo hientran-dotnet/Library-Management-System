@@ -1,0 +1,38 @@
+=====================================================================================
+# 15-06-2025
+
+- Tạo repo github, chứng chỉ MIT, README.md file
+- Cập nhật README.md file
+
+=====================================================================================
+# 16-06-2025
+
+- Tạo project trên local, add vào dự án
+- Tạo file .gitignore - cấu hình file .gitignore
+- Cấu hình các thư mục trên local
+- Viết các models (các class) cho dự án
+- Tạo một project con (test project) để làm quen với thư viện spectre.Console
+- Tạo và viết file login-register-logic-bilingual.md chứa logic đăng ký và đăng nhập của dự án
+- Tạo giao diện đăng ký đăng nhập cho người dùng
+
+## Đang thực hiện - Task hôm nay
+
+- Tạo giao diện đăng ký đăng nhập cho người dùng ✅
+- Xử lý logic 
+	+ Tạo các method helper:
+		+ Kiểm tra username trong folder (check username trong folder xem có tồn tại hay không?)
+		+ Kiểm tra password: hai password mà user nhập có trùng khớp hay không
+		+ Kiểm tra email: kiểm tra email này đã tồn tại hay chưa?
+
+- Commit các thay đổi và push lên github.
+
+=====================================================================================
+### NOTE:
+[16-06-2025]
+
+- Chuột phải vào cửa sổ console để chỉnh sửa kích thước cho phù hợp với ứng dụng
+	+ font: 24 (my font: Jetbrains Mono)
+	+ Layout: 
+		+ Width: 80
+		+ Height: 20
+	+ Scrren Buffer Size and other set to default.
