@@ -1,0 +1,79 @@
+﻿using Library_Management_System.Models;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.Metrics;
+using System.Linq;
+using System.Text;
+using System.Text.Json;
+using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace Library_Management_System.Utils
+{
+    public class uFileInteraction
+    {
+        public static void SaveUserToFile(User user)
+        {
+            string folderPath = uDirectory.Get_Data_Account_Directory();
+            // Đảm bảo folder tồn tại
+            Directory.CreateDirectory(folderPath);
+
+            // Đường dẫn file: username.json
+            string filePath = Path.Combine(folderPath, $"{user.username}.json");
+
+            // Kiểm tra username hợp lệ trước khi lưu
+            if (string.IsNullOrWhiteSpace(user.username))
+                throw new ArgumentException("Username không được để trống!");
+
+            // Serialize object user thành JSON
+            string json = JsonSerializer.Serialize(user, new JsonSerializerOptions { WriteIndented = true });
+
+            // Ghi ra file
+            File.WriteAllText(filePath, json);
+        }
+
+        public static void SaveMemeberToFile(Member member)
+        {
+            string filePath = Path.Combine(uDirectory.Get_Data_UserInfo_Members(), "Members.json");
+            List<Member> members = new List<Member>();
+            if (File.Exists(filePath))
+            {
+                var json = File.ReadAllText(filePath);
+                members = JsonSerializer.Deserialize<List<Member>>(json) ?? new List<Member>();
+            }
+            members.Add(member);
+            string newJson = JsonSerializer.Serialize(members, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(filePath, newJson);
+        }
+
+        public static void SaveEmailToFile(string newEmail)
+        {
+            string folderPath = uDirectory.Get_Data_UserInfo_Emails_Directory();
+            // Đảm bảo folder tồn tại
+            Directory.CreateDirectory(folderPath);
+            // Đường dẫn file: emails.json
+            string filePath = Path.Combine(folderPath, "emails.json");
+            // Đọc dữ liệu cũ (nếu có)
+            List<string> emails;
+            if (File.Exists(filePath))
+            {
+                string json = File.ReadAllText(filePath);
+                emails = JsonSerializer.Deserialize<List<string>>(json) ?? new List<string>();
+            }
+            else
+            {
+                emails = new List<string>();
+            }
+
+            if (!emails.Contains(newEmail, StringComparer.OrdinalIgnoreCase))
+            {
+                emails.Add(newEmail);
+            }
+
+            // Ghi lại ra file
+            string newJson = JsonSerializer.Serialize(emails, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(filePath, newJson);
+        }
+    }
+    
+}
