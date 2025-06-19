@@ -12,62 +12,21 @@ namespace Library_Management_System.Menu
 {
     public class login_register_menu
     {
-        public void ShowWelcomeScreen()
+        
+
+        public static void ShowLoginForm()
         {
             Console.Clear();
-
-            // Tạo banner chào mừng
-            var rule = new Rule("[blue]📚 HỆ THỐNG QUẢN LÝ THƯ VIỆN 📚[/]")
-            {
-                Style = Style.Parse("blue"),
-                Justification = Justify.Center
-            };
-            AnsiConsole.Write(rule);
-
-            AnsiConsole.WriteLine();
-
-            // Panel chào mừng
-            var welcomePanel = new Panel(
-                "[bold yellow]Chào mừng đến với Hệ thống Quản lý Thư viện![/]\n\n" +
-                "[dim]Một hệ thống hiện đại để quản lý sách, độc giả và các hoạt động thư viện.[/]")
-            {
-                Header = new PanelHeader("[green]WELCOME[/]", Justify.Center),
-                Border = BoxBorder.Rounded,
-                BorderStyle = new Style(Color.Green)
-            };
-
-            AnsiConsole.Write(welcomePanel);
-            AnsiConsole.WriteLine();
-        }
-
-        public string ShowMainMenu()
-        {
-            var choice = AnsiConsole.Prompt(
-                new SelectionPrompt<string>()
-                    .Title("[bold cyan]Vui lòng chọn một tùy chọn:[/]")
-                    .PageSize(10)
-                    .MoreChoicesText("[grey](Di chuyển lên xuống để xem thêm tùy chọn)[/]")
-                    .AddChoices(new[] {
-                        "🔐 Đăng nhập",
-                        "📝 Đăng ký tài khoản mới",
-                        "❌ Thoát"
-                    }));
-
-            return choice;
-        }
-
-        public void ShowLoginForm()
-        {
-            Console.Clear();
-            ShowWelcomeScreen();
+            MenuUtils.ShowWelcomeScreen();
 
             // Panel đăng nhập
-            var loginPanel = new Panel("")
+            var loginPanel = new Panel("🔐")
             {
                 Header = new PanelHeader("[bold blue]🔐 ĐĂNG NHẬP[/]", Justify.Center),
                 Border = BoxBorder.Double,
                 BorderStyle = new Style(Color.Blue)
             };
+
 
             AnsiConsole.Write(loginPanel);
             AnsiConsole.WriteLine();
@@ -83,15 +42,26 @@ namespace Library_Management_System.Menu
 
             // Input tên đăng nhập
             var username = AnsiConsole.Prompt(
-                new TextPrompt<string>("[bold yellow]👤 Tên đăng nhập:[/]")
+                new TextPrompt<string>("[bold yellow]👤 Tên đăng nhập: [/]")
                     .PromptStyle("green")
                     .ValidationErrorMessage("[red]Vui lòng nhập tên đăng nhập![/]")
                     .Validate(username =>
                     {
-                        return username.Length >= 3 ? ValidationResult.Success()
-                            : ValidationResult.Error("[red]Tên đăng nhập phải có ít nhất 3 ký tự![/]");
+                        //return username.Length >= 3 ? ValidationResult.Success()
+                        //    : ValidationResult.Error("[red]Tên đăng nhập phải có ít nhất 3 ký tự![/]");
+                        if (string.IsNullOrEmpty(username) || username.Length < 3)
+                        {
+                            return ValidationResult.Error("[red]Tên đăng nhập phải có ít nhất 3 ký tự![/]");
+                        }
+                        if (AuthService.validateUsername(username))
+                        {
+                            return ValidationResult.Error("[red]Tên đăng nhập không tồn tại trong hệ thống![/]");
+                        }
+                        return ValidationResult.Success();
                     }));
 
+
+        InputAgain:
             // Input mật khẩu
             var password = AnsiConsole.Prompt(
                 new TextPrompt<string>("[bold yellow]🔒 Mật khẩu:[/]")
@@ -113,7 +83,16 @@ namespace Library_Management_System.Menu
             {
                 MenuUtils.ShowLoadingAnimation("Đang xác thực...");
                 // Logic xử lý đăng nhập sẽ được thêm vào đây
-                MenuUtils.ShowSuccessMessage("Đăng nhập thành công!");
+                string hashedPassword = uFileInteraction.GetHashedPassword(username);
+                if (AuthService.VerifyPassword(password, hashedPassword)){
+                    MenuUtils.ShowSuccessMessage("Đăng nhập thành công!");
+                    AuthService.SaveSession(username);
+                }
+                else
+                {
+                    MenuUtils.ShowErrorMessage("Mật khẩu không chính xác!");
+                    goto InputAgain;
+                }
             }
             else
             {
@@ -121,7 +100,7 @@ namespace Library_Management_System.Menu
             }
         }
 
-        public void ShowRegisterForm()
+        public static void ShowRegisterForm()
         {
             // Khởi tạo đối tượng User và Member 
             var user = new Models.User();
@@ -129,10 +108,10 @@ namespace Library_Management_System.Menu
 
 
             Console.Clear();
-            ShowWelcomeScreen();
+            MenuUtils.ShowWelcomeScreen();
 
             // Panel đăng ký
-            var registerPanel = new Panel("")
+            var registerPanel = new Panel("📝")
             {
                 Header = new PanelHeader("[bold green]📝 ĐĂNG KÝ TÀI KHOẢN[/]", Justify.Center),
                 Border = BoxBorder.Double,
@@ -228,12 +207,16 @@ namespace Library_Management_System.Menu
             // Lưu Member Name
             member.Name = fullName;
 
+            // Lưu phonenumber
+            member.PhoneNumber = phoneNumber;
+
             if (AuthService.IsEmailExists(user.email))
             {
                 throw new Exception("Email đã tồn tại trong hệ thống!");
             }
             // Lưu Username
             user.username = username;
+            member.username = username;
 
             // Lưu CreatedDated
             var timeZone = TimeZoneInfo.FindSystemTimeZoneById("SE Asia Standard Time"); // Múi giờ Hà Nội/Jakarta
@@ -287,7 +270,7 @@ namespace Library_Management_System.Menu
             #endregion
         }
 
-        private void ShowRegistrationSummary(string fullName, string username, string email, string phone)
+        private static void ShowRegistrationSummary(string fullName, string username, string email, string phone)
         {
             var summaryTable = new Table()
                 .Border(TableBorder.Rounded)
@@ -310,28 +293,6 @@ namespace Library_Management_System.Menu
         }
 
 
-        // Method chính để chạy ứng dụng
-        public void Run()
-        {
-            while (true)
-            {
-                ShowWelcomeScreen();
-
-                var choice = ShowMainMenu();
-
-                switch (choice)
-                {
-                    case "🔐 Đăng nhập":
-                        ShowLoginForm();
-                        break;
-                    case "📝 Đăng ký tài khoản mới":
-                        ShowRegisterForm();
-                        break;
-                    case "❌ Thoát":
-                        MenuUtils.ShowGoodbyeMessage();
-                        return;
-                }
-            }
-        }
+        
     }
 }

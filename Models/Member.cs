@@ -32,6 +32,7 @@ namespace Library_Management_System.Models
 
         public string? Id { get; set; } // Mã thành viên
         public string? Name { get; set; } // Tên thành viên
+        public string? username { get; set; } // Tên đăng nhập thành viên
         public string? Email { get; set; } // Email thành viên
         public string? PhoneNumber { get; set; } // Số điện thoại thành viên
         public string? Address { get; set; } // Địa chỉ thành viên

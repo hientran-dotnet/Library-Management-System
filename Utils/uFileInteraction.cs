@@ -74,6 +74,33 @@ namespace Library_Management_System.Utils
             string newJson = JsonSerializer.Serialize(emails, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(filePath, newJson);
         }
+
+        public static string GetHashedPassword(string username)
+        { 
+
+            // Lấy đường dẫn đến thư mục chứa file tài khoản
+            string folderPath = uDirectory.Get_Data_Account_Directory();
+            // Đảm bảo thư mục tồn tại
+            string file = Path.Combine(folderPath, $"{username}.json");
+
+            if (!File.Exists(file))
+            {
+                throw new FileNotFoundException($"Không tìm thấy file tài khoản cho người dùng: {username}");
+            }
+
+            using JsonDocument document = JsonDocument.Parse(File.ReadAllText(file));
+            JsonElement root = document.RootElement;
+
+            // Truy cập thuộc tính hashedPassword từ JSON
+            if(root.TryGetProperty("hashedPassword", out JsonElement hashedPasswordElement))
+            {
+                return hashedPasswordElement.GetString() ?? string.Empty; // Trả về mật khẩu đã băm hoặc chuỗi rỗng nếu không có
+            }
+            else
+            {
+                throw new Exception($"Không tìm thấy thuộc tính 'hashedPassword' trong file tài khoản: {username}");
+            }
+        }
     }
     
 }

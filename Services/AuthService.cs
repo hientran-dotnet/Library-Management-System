@@ -1,5 +1,6 @@
 ﻿using Konscious.Security.Cryptography;
 using Library_Management_System.Menu;
+using Library_Management_System.Models;
 using Library_Management_System.Utils;
 using System;
 using System.Collections.Generic;
@@ -20,7 +21,7 @@ namespace Library_Management_System.Services
             string accountDirectory = Utils.uDirectory.Get_Data_Account_Directory();
             //Console.WriteLine($"Đường dẫn tới folder chứa file: {accountDirectory}");
 
-            if(!Directory.Exists(accountDirectory))
+            if (!Directory.Exists(accountDirectory))
             {
                 //Console.WriteLine("Thư mục tài khoản không tồn tại.");
                 MenuUtils.ShowErrorMessage("Thư mục tài khoản không tồn tại. Vui lòng kiểm tra lại cấu hình hệ thống.");
@@ -35,7 +36,7 @@ namespace Library_Management_System.Services
             {
                 // Lấy tên file mà không có phần mở rộng
                 string existingUsername = Path.GetFileNameWithoutExtension(file);
-                if(string.Equals(existingUsername, username, StringComparison.OrdinalIgnoreCase))
+                if (string.Equals(existingUsername, username, StringComparison.OrdinalIgnoreCase))
                 {
                     //Console.WriteLine($"Tên đăng nhập '{username}' đã tồn tại trong hệ thống.");
                     //MenuUtils.ShowErrorMessage($"Tên đăng nhập '{username}' đã tồn tại trong hệ thống.");
@@ -113,5 +114,58 @@ namespace Library_Management_System.Services
             // So sánh hash vừa tạo với hash lưu trong file
             return CryptographicOperations.FixedTimeEquals(hash, hashToCompare);
         }
-    }
+
+        public static void SaveSession(string username)
+        {
+            // Lưu thông tin đăng nhập vào file session.json
+            string sessionFilePath = Path.Combine(uDirectory.Get_Data_Session_Directory(), "session.json");
+
+            var newSession = new Session();
+            newSession.username = username;
+            newSession.SessionToken = Guid.NewGuid().ToString(); // Tạo mã thông báo phiên làm việc ngẫu nhiên
+            newSession.CreatedDate = DateTime.Now.ToString("dd-MM-yyyy HH:mm:ss"); // Ngày giờ tạo phiên làm việc
+
+            // Chuyển đổi đối tượng Session thành JSON
+            var json = JsonSerializer.Serialize(newSession, new JsonSerializerOptions { WriteIndented = true });
+
+            // Lưu JSON vào file
+            Directory.CreateDirectory(uDirectory.Get_Data_Session_Directory()); // Đảm bảo thư mục tồn tại
+            File.WriteAllText(sessionFilePath, json);
+
+
+        }
+
+        public static void ClearSession()
+        {
+            try
+            {
+                string sessionFilePath = Path.Combine(uDirectory.Get_Data_Session_Directory(), "session.json");
+                if (File.Exists(sessionFilePath))
+                {
+                    File.Delete(sessionFilePath);
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Lỗi khi xóa session: {ex.Message}");
+            }
+        }
+
+        public static bool IsUserLoggedIn()
+        {
+            try
+            {
+                string sessionFilePath = Path.Combine(uDirectory.Get_Data_Session_Directory(), "session.json");
+                if (!File.Exists(sessionFilePath)) return false;
+                var json = File.ReadAllText(sessionFilePath);
+                if (string.IsNullOrWhiteSpace(json)) return false;
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
+
+    } 
 }

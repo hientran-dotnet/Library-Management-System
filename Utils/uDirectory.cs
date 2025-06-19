@@ -58,6 +58,12 @@ namespace Library_Management_System.Utils
             return Path.Combine(dataUserInfoFolderPath, "Members");
         }
 
-
+        public static string Get_Data_Session_Directory()
+        {
+            // Lấy đường dẫn solution hiện tại.
+            // Trả về đường dẫn đến thư mục DataSession trong thư mục gốc của giải pháp
+            string dataFolderPath = Get_Data_Directory();
+            return Path.Combine(dataFolderPath, "Session");
+        }
     }
 }

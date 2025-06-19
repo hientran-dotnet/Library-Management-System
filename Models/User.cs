@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Library_Management_System.Models
@@ -26,9 +27,16 @@ namespace Library_Management_System.Models
         //public void SetEmail(string? email) => this.email = email; // Email người dùng
         //public void SetCreatedDate(DateTime? createdDate) => this.createdDate = createdDate; // Ngày tạo tài khoản
 
+        [JsonPropertyName("username")]
         public string? username { get; set; } // Tên đăng nhập
+
+        [JsonPropertyName("hashedPassword")]
         public string? hashedPassword { get; set; } // Mật khẩu đã băm
+
+        [JsonPropertyName("email")]
         public string? email { get; set; }
+
+        [JsonPropertyName("createdDate")]
         public DateTime? createdDate { get; set; } // Ngày tạo tài khoản
 
 
