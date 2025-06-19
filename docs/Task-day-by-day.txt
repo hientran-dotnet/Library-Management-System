@@ -15,7 +15,7 @@
 - Tạo và viết file login-register-logic-bilingual.md chứa logic đăng ký và đăng nhập của dự án
 - Tạo giao diện đăng ký đăng nhập cho người dùng
 
-## Đang thực hiện - Task hôm nay
+//
 
 - Tạo giao diện đăng ký đăng nhập cho người dùng ✅
 - Xử lý logic 
@@ -27,12 +27,48 @@
 - Commit các thay đổi và push lên github.
 
 =====================================================================================
+# 19-06-2025
+
+- Refractor code logic đăng kí tài khoản.
+- Thêm phương thức lấy thuộc tính hashedPassword từ file Json với input là username.
+- Thêm chức năng đăng nhập tài khoản.
+- Thêm phương thức "SaveSession" để lưu thông tin phiên sau khi đăng nhập thành công.
+- Thêm phương thức "Clear Session" để xóa thông tin đăng nhập.
+- Thêm các phương thức sử dụng thư viện Spectre.Console để hiển thị UI trong console.
+	+ ShowMainLibraryMenu
+	+ ShowBookManagementMenu
+	+ ShowMemberManagementMenu
+	+ ShowBorrowReturnManagementMenu
+	+ ShowSearchAndFilterMenu
+	+ ShowReportMenu
+	+ ShowSettingsMenu
+	+ ShowDataTable
+	+ ShowProgressBar
+	+ ShowPagedSelection
+	+ ShowBreadcrumb
+	+ ShowQuickStats
+- Thêm các phương thức để nhập thông tin với validation
+	+ PromptForInput
+	+ ConfirmAction
+- Thêm class helper cho Menu Navigation
+- Thêm chức năng đăng xuất
+- Test lưu session và trạng thái người dùng
+- Thêm chức năng đăng xuất trong menu chính (menu sau đăng nhập)
+- Thêm chức năng thoát hẳn chương trình trong menu chính (menu sau đăng nhập)
+
+=====================================================================================
 ### NOTE:
+
 [16-06-2025]
 
+$NOTE của dự án:
 - Chuột phải vào cửa sổ console để chỉnh sửa kích thước cho phù hợp với ứng dụng
 	+ font: 24 (my font: Jetbrains Mono)
 	+ Layout: 
 		+ Width: 80
 		+ Height: 20
 	+ Scrren Buffer Size and other set to default.
+
+[19-06-2025]
+
+- Sử dụng session (file) để lưu trạng thái đăng nhập của user
