@@ -101,6 +101,40 @@ namespace Library_Management_System.Utils
                 throw new Exception($"Không tìm thấy thuộc tính 'hashedPassword' trong file tài khoản: {username}");
             }
         }
+
+
+        public static void SaveBookToFile(Book book)
+        {
+            string filePath = Path.Combine(uDirectory.Get_Data_Books_Directory(), "Books.json");
+            List<Book> books = new List<Book>();
+            if (File.Exists(filePath))
+            {
+                var json = File.ReadAllText(filePath);
+                if (!string.IsNullOrWhiteSpace(json))
+                {
+                    books = JsonSerializer.Deserialize<List<Book>>(json) ?? new List<Book>();
+                }
+            }
+            books.Add(book);
+            string newJson = JsonSerializer.Serialize(books, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(filePath, newJson);
+        }
+
+        public static void SaveBookToFile(Book book, string filePath)
+        {
+            List<Book> books = new List<Book>();
+            if (File.Exists(filePath))
+            {
+                var json = File.ReadAllText(filePath);
+                if (!string.IsNullOrWhiteSpace(json))
+                {
+                    books = JsonSerializer.Deserialize<List<Book>>(json) ?? new List<Book>();
+                }
+            }
+            books.Add(book);
+            string newJson = JsonSerializer.Serialize(books, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(filePath, newJson);
+        }
     }
     
 }
