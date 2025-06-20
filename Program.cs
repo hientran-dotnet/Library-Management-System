@@ -11,6 +11,7 @@ namespace Library_Management_System
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8; // Đảm bảo hiển thị tiếng Việt đúng
 
+            //BookService.DisplayAllBooks(); // Tải tất cả sách từ file khi khởi động ứng dụng
 
             var app = new Startup();
             app.Run();
