@@ -57,6 +57,19 @@
 - Thêm chức năng thoát hẳn chương trình trong menu chính (menu sau đăng nhập)
 
 =====================================================================================
+20-06-2025
+
+- Thêm phương thức Get chuỗi đường dẫn tới folder Books.
+- Thêm phương thức lưu toàn bộ thông tin sách vào file json.
+- Thêm phương thức lấy toàn bộ sách hiện có.
+- Thêm phương thức in toàn bộ thông tin sách hiện có ra màn hình.
+- Thêm phương thức lấy thông tin sách theo id
+- Thêm phương thức sửa sách
+- Thêm phương thức lấy đường dẫn folder Trashcan
+- Thêm phương thức xóa sách
+
+
+=====================================================================================
 ### NOTE:
 
 [16-06-2025]
