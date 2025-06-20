@@ -1,0 +1,740 @@
+[
+  {
+    "Id": 1,
+    "Title": "T\u00F4i th\u1EA5y hoa v\u00E0ng tr\u00EAn c\u1ECF xanh",
+    "Author": "Nguy\u1EC5n Nh\u1EADt \u00C1nh",
+    "Publisher": "NXB Tr\u1EBB",
+    "Year": 2010,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 2,
+    "Title": "Cho t\u00F4i xin m\u1ED9t v\u00E9 \u0111i tu\u1ED5i th\u01A1",
+    "Author": "Nguy\u1EC5n Nh\u1EADt \u00C1nh",
+    "Publisher": "NXB Tr\u1EBB",
+    "Year": 2018,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 3,
+    "Title": "L\u1EADp tr\u00ECnh C# t\u1EEB c\u01A1 b\u1EA3n \u0111\u1EBFn n\u00E2ng cao",
+    "Author": "Ph\u1EA1m Minh Tu\u1EA5n",
+    "Publisher": "NXB Th\u00F4ng tin v\u00E0 Truy\u1EC1n th\u00F4ng",
+    "Year": 2023,
+    "Category": "C\u00F4ng ngh\u1EC7 th\u00F4ng tin",
+    "IsAvailable": false
+  },
+  {
+    "Id": 4,
+    "Title": "Kinh doanh th\u00F4ng minh",
+    "Author": "Nguy\u1EC5n V\u0103n Th\u00E0nh",
+    "Publisher": "NXB Lao \u0111\u1ED9ng",
+    "Year": 2022,
+    "Category": "Kinh doanh",
+    "IsAvailable": true
+  },
+  {
+    "Id": 5,
+    "Title": "L\u1ECBch s\u1EED Vi\u1EC7t Nam",
+    "Author": "Tr\u1EA7n Qu\u1ED1c V\u01B0\u1EE3ng",
+    "Publisher": "NXB Gi\u00E1o d\u1EE5c Vi\u1EC7t Nam",
+    "Year": 2021,
+    "Category": "L\u1ECBch s\u1EED",
+    "IsAvailable": true
+  },
+  {
+    "Id": 6,
+    "Title": "T\u1EAFt \u0111\u00E8n",
+    "Author": "Ng\u00F4 T\u1EA5t T\u1ED1",
+    "Publisher": "NXB V\u0103n h\u1ECDc",
+    "Year": 2020,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": false
+  },
+  {
+    "Id": 7,
+    "Title": "\u0110\u1EA1i s\u1ED1 tuy\u1EBFn t\u00EDnh",
+    "Author": "L\u00EA V\u0103n Minh",
+    "Publisher": "NXB \u0110\u1EA1i h\u1ECDc Qu\u1ED1c gia",
+    "Year": 2019,
+    "Category": "To\u00E1n h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 8,
+    "Title": "Ti\u1EBFng Anh giao ti\u1EBFp c\u01A1 b\u1EA3n",
+    "Author": "Tr\u1EA7n Th\u1ECB Lan",
+    "Publisher": "NXB T\u1EEB \u0111i\u1EC3n B\u00E1ch khoa",
+    "Year": 2023,
+    "Category": "Ngo\u1EA1i ng\u1EEF",
+    "IsAvailable": true
+  },
+  {
+    "Id": 9,
+    "Title": "K\u1EF9 thu\u1EADt \u0111i\u1EC7n t\u1EED",
+    "Author": "Ph\u1EA1m V\u0103n H\u00F9ng",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2022,
+    "Category": "K\u1EF9 thu\u1EADt",
+    "IsAvailable": true
+  },
+  {
+    "Id": 10,
+    "Title": "Truy\u1EC7n Ki\u1EC1u",
+    "Author": "Nguy\u1EC5n Du",
+    "Publisher": "NXB V\u0103n h\u1ECDc",
+    "Year": 2021,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": false
+  },
+  {
+    "Id": 11,
+    "Title": "Qu\u1EA3n tr\u1ECB nh\u00E2n s\u1EF1 hi\u1EC7n \u0111\u1EA1i",
+    "Author": "L\u00EA Th\u1ECB Mai",
+    "Publisher": "NXB Lao \u0111\u1ED9ng",
+    "Year": 2023,
+    "Category": "Qu\u1EA3n tr\u1ECB",
+    "IsAvailable": true
+  },
+  {
+    "Id": 12,
+    "Title": "V\u1EADt l\u00FD \u0111\u1EA1i c\u01B0\u01A1ng",
+    "Author": "Nguy\u1EC5n V\u0103n C\u01B0\u1EDDng",
+    "Publisher": "NXB Gi\u00E1o d\u1EE5c Vi\u1EC7t Nam",
+    "Year": 2022,
+    "Category": "V\u1EADt l\u00FD",
+    "IsAvailable": true
+  },
+  {
+    "Id": 13,
+    "Title": "H\u00F3a h\u1ECDc h\u1EEFu c\u01A1",
+    "Author": "Tr\u1EA7n V\u0103n B\u00ECnh",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2021,
+    "Category": "H\u00F3a h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 14,
+    "Title": "Sinh h\u1ECDc ph\u00E2n t\u1EED",
+    "Author": "Ph\u1EA1m Th\u1ECB Hoa",
+    "Publisher": "NXB Y h\u1ECDc",
+    "Year": 2023,
+    "Category": "Sinh h\u1ECDc",
+    "IsAvailable": false
+  },
+  {
+    "Id": 15,
+    "Title": "T\u00E2m l\u00FD h\u1ECDc \u0111\u1EA1i c\u01B0\u01A1ng",
+    "Author": "L\u00EA V\u0103n \u0110\u1EE9c",
+    "Publisher": "NXB Gi\u00E1o d\u1EE5c Vi\u1EC7t Nam",
+    "Year": 2022,
+    "Category": "T\u00E2m l\u00FD h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 16,
+    "Title": "D\u1EBF M\u00E8n phi\u00EAu l\u01B0u k\u00FD",
+    "Author": "T\u00F4 Ho\u00E0i",
+    "Publisher": "NXB Kim \u0110\u1ED3ng",
+    "Year": 2020,
+    "Category": "Thi\u1EBFu nhi",
+    "IsAvailable": true
+  },
+  {
+    "Id": 17,
+    "Title": "B\u00E0i h\u1ECDc t\u1EEB cu\u1ED9c s\u1ED1ng",
+    "Author": "Nguy\u1EC5n Th\u1ECB Lan Anh",
+    "Publisher": "NXB Ph\u1EE5 n\u1EEF",
+    "Year": 2023,
+    "Category": "K\u1EF9 n\u0103ng s\u1ED1ng",
+    "IsAvailable": true
+  },
+  {
+    "Id": 18,
+    "Title": "\u0110\u1ECBa l\u00FD Vi\u1EC7t Nam",
+    "Author": "Tr\u1EA7n Qu\u1ED1c D\u0169ng",
+    "Publisher": "NXB Gi\u00E1o d\u1EE5c Vi\u1EC7t Nam",
+    "Year": 2021,
+    "Category": "\u0110\u1ECBa l\u00FD",
+    "IsAvailable": false
+  },
+  {
+    "Id": 19,
+    "Title": "Tri\u1EBFt h\u1ECDc M\u00E1c - L\u00EAnin",
+    "Author": "L\u00EA V\u0103n Ch\u00EDnh",
+    "Publisher": "NXB Ch\u00EDnh tr\u1ECB Qu\u1ED1c gia",
+    "Year": 2022,
+    "Category": "Tri\u1EBFt h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 20,
+    "Title": "Kinh t\u1EBF h\u1ECDc vi m\u00F4",
+    "Author": "Nguy\u1EC5n V\u0103n Kinh",
+    "Publisher": "NXB Th\u1ED1ng k\u00EA",
+    "Year": 2023,
+    "Category": "Kinh t\u1EBF",
+    "IsAvailable": true
+  },
+  {
+    "Id": 21,
+    "Title": "L\u1EA1c Long Qu\u00E2n v\u00E0 \u00C2u C\u01A1",
+    "Author": "Truy\u1EC7n c\u1ED5 t\u00EDch Vi\u1EC7t Nam",
+    "Publisher": "NXB Kim \u0110\u1ED3ng",
+    "Year": 2021,
+    "Category": "Truy\u1EC7n c\u1ED5 t\u00EDch",
+    "IsAvailable": true
+  },
+  {
+    "Id": 22,
+    "Title": "C\u1EA5u tr\u00FAc d\u1EEF li\u1EC7u v\u00E0 gi\u1EA3i thu\u1EADt",
+    "Author": "Ph\u1EA1m V\u0103n Th\u1ECD",
+    "Publisher": "NXB Th\u00F4ng tin v\u00E0 Truy\u1EC1n th\u00F4ng",
+    "Year": 2022,
+    "Category": "C\u00F4ng ngh\u1EC7 th\u00F4ng tin",
+    "IsAvailable": false
+  },
+  {
+    "Id": 23,
+    "Title": "Thi\u00EAn nga \u0111en",
+    "Author": "Nassim Nicholas Taleb",
+    "Publisher": "NXB Th\u1EBF gi\u1EDBi",
+    "Year": 2020,
+    "Category": "Kinh t\u1EBF",
+    "IsAvailable": true
+  },
+  {
+    "Id": 24,
+    "Title": "S\u1ED1 \u0111\u1ECF",
+    "Author": "V\u0169 Tr\u1ECDng Ph\u1EE5ng",
+    "Publisher": "NXB V\u0103n h\u1ECDc",
+    "Year": 2021,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 25,
+    "Title": "\u0110\u1ED3ng ch\u00ED",
+    "Author": "V\u0169 Tr\u1ECDng Ph\u1EE5ng",
+    "Publisher": "NXB V\u0103n h\u1ECDc",
+    "Year": 2020,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": false
+  },
+  {
+    "Id": 26,
+    "Title": "Gi\u1EA3i t\u00EDch 1",
+    "Author": "Tr\u1EA7n V\u0103n H\u00E0o",
+    "Publisher": "NXB \u0110\u1EA1i h\u1ECDc Qu\u1ED1c gia",
+    "Year": 2023,
+    "Category": "To\u00E1n h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 27,
+    "Title": "Ti\u1EBFng Nh\u1EADt s\u01A1 c\u1EA5p",
+    "Author": "L\u00EA Th\u1ECB Ng\u1ECDc",
+    "Publisher": "NXB T\u1EEB \u0111i\u1EC3n B\u00E1ch khoa",
+    "Year": 2022,
+    "Category": "Ngo\u1EA1i ng\u1EEF",
+    "IsAvailable": true
+  },
+  {
+    "Id": 28,
+    "Title": "C\u01A1 h\u1ECDc l\u01B0\u1EE3ng t\u1EED",
+    "Author": "Nguy\u1EC5n V\u0103n Long",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2021,
+    "Category": "V\u1EADt l\u00FD",
+    "IsAvailable": true
+  },
+  {
+    "Id": 29,
+    "Title": "V\u0103n h\u00F3a Vi\u1EC7t Nam",
+    "Author": "Tr\u1EA7n Qu\u1ED1c V\u01B0\u1EE3ng",
+    "Publisher": "NXB V\u0103n h\u00F3a - Th\u00F4ng tin",
+    "Year": 2023,
+    "Category": "V\u0103n h\u00F3a",
+    "IsAvailable": false
+  },
+  {
+    "Id": 30,
+    "Title": "Thi\u00EAn th\u1EA7n nh\u1ECF",
+    "Author": "Nguy\u1EC5n Ng\u1ECDc T\u01B0",
+    "Publisher": "NXB Tr\u1EBB",
+    "Year": 2022,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 31,
+    "Title": "Marketing c\u0103n b\u1EA3n",
+    "Author": "Ph\u1EA1m Th\u1ECB H\u01B0\u01A1ng",
+    "Publisher": "NXB Lao \u0111\u1ED9ng",
+    "Year": 2023,
+    "Category": "Marketing",
+    "IsAvailable": true
+  },
+  {
+    "Id": 32,
+    "Title": "K\u1EF9 thu\u1EADt x\u00E2y d\u1EF1ng",
+    "Author": "L\u00EA V\u0103n C\u00F4ng",
+    "Publisher": "NXB X\u00E2y d\u1EF1ng",
+    "Year": 2022,
+    "Category": "K\u1EF9 thu\u1EADt",
+    "IsAvailable": true
+  },
+  {
+    "Id": 33,
+    "Title": "Thi\u1EC1n v\u00E0 cu\u1ED9c s\u1ED1ng",
+    "Author": "Th\u00EDch Nh\u1EA5t H\u1EA1nh",
+    "Publisher": "NXB T\u00F4n gi\u00E1o",
+    "Year": 2021,
+    "Category": "T\u00E2m linh",
+    "IsAvailable": false
+  },
+  {
+    "Id": 34,
+    "Title": "H\u00F3a h\u1ECDc v\u00F4 c\u01A1",
+    "Author": "Nguy\u1EC5n Th\u1ECB Xu\u00E2n",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2023,
+    "Category": "H\u00F3a h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 35,
+    "Title": "Sinh h\u1ECDc t\u1EBF b\u00E0o",
+    "Author": "Tr\u1EA7n V\u0103n Nam",
+    "Publisher": "NXB Y h\u1ECDc",
+    "Year": 2022,
+    "Category": "Sinh h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 36,
+    "Title": "K\u1EF9 n\u0103ng giao ti\u1EBFp",
+    "Author": "L\u00EA Th\u1ECB Minh",
+    "Publisher": "NXB Ph\u1EE5 n\u1EEF",
+    "Year": 2023,
+    "Category": "K\u1EF9 n\u0103ng s\u1ED1ng",
+    "IsAvailable": true
+  },
+  {
+    "Id": 37,
+    "Title": "L\u1ECBch s\u1EED th\u1EBF gi\u1EDBi",
+    "Author": "Ph\u1EA1m V\u0103n \u0110\u00F4ng",
+    "Publisher": "NXB Gi\u00E1o d\u1EE5c Vi\u1EC7t Nam",
+    "Year": 2021,
+    "Category": "L\u1ECBch s\u1EED",
+    "IsAvailable": false
+  },
+  {
+    "Id": 38,
+    "Title": "T\u00F4i t\u00E0i gi\u1ECFi, b\u1EA1n c\u0169ng th\u1EBF",
+    "Author": "Adam Khoo",
+    "Publisher": "NXB Tr\u1EBB",
+    "Year": 2020,
+    "Category": "K\u1EF9 n\u0103ng s\u1ED1ng",
+    "IsAvailable": true
+  },
+  {
+    "Id": 39,
+    "Title": "\u0110\u1EA5t r\u1EEBng ph\u01B0\u01A1ng Nam",
+    "Author": "\u0110o\u00E0n Gi\u1ECFi",
+    "Publisher": "NXB Kim \u0110\u1ED3ng",
+    "Year": 2021,
+    "Category": "Thi\u1EBFu nhi",
+    "IsAvailable": true
+  },
+  {
+    "Id": 40,
+    "Title": "Th\u1EF1c v\u1EADt h\u1ECDc \u0111\u1EA1i c\u01B0\u01A1ng",
+    "Author": "Nguy\u1EC5n V\u0103n H\u1EA3i",
+    "Publisher": "NXB N\u00F4ng nghi\u1EC7p",
+    "Year": 2022,
+    "Category": "Sinh h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 41,
+    "Title": "Ti\u1EBFng Trung c\u01A1 b\u1EA3n",
+    "Author": "Tr\u1EA7n Th\u1ECB Ph\u01B0\u01A1ng",
+    "Publisher": "NXB T\u1EEB \u0111i\u1EC3n B\u00E1ch khoa",
+    "Year": 2023,
+    "Category": "Ngo\u1EA1i ng\u1EEF",
+    "IsAvailable": false
+  },
+  {
+    "Id": 42,
+    "Title": "Kinh t\u1EBF h\u1ECDc v\u0129 m\u00F4",
+    "Author": "L\u00EA V\u0103n Th\u00E0nh",
+    "Publisher": "NXB Th\u1ED1ng k\u00EA",
+    "Year": 2022,
+    "Category": "Kinh t\u1EBF",
+    "IsAvailable": true
+  },
+  {
+    "Id": 43,
+    "Title": "\u0110i\u1EC7n t\u1EED s\u1ED1",
+    "Author": "Ph\u1EA1m V\u0103n T\u00F9ng",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2021,
+    "Category": "K\u1EF9 thu\u1EADt",
+    "IsAvailable": true
+  },
+  {
+    "Id": 44,
+    "Title": "T\u00E2m l\u00FD h\u1ECDc tr\u1EBB em",
+    "Author": "Nguy\u1EC5n Th\u1ECB H\u1ED3ng",
+    "Publisher": "NXB Gi\u00E1o d\u1EE5c Vi\u1EC7t Nam",
+    "Year": 2023,
+    "Category": "T\u00E2m l\u00FD h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 45,
+    "Title": "L\u00E3o H\u1EA1c",
+    "Author": "Nam Cao",
+    "Publisher": "NXB V\u0103n h\u1ECDc",
+    "Year": 2020,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": false
+  },
+  {
+    "Id": 46,
+    "Title": "Qu\u1EA3n l\u00FD d\u1EF1 \u00E1n",
+    "Author": "Tr\u1EA7n V\u0103n H\u00F9ng",
+    "Publisher": "NXB Lao \u0111\u1ED9ng",
+    "Year": 2023,
+    "Category": "Qu\u1EA3n tr\u1ECB",
+    "IsAvailable": true
+  },
+  {
+    "Id": 47,
+    "Title": "C\u01A1 h\u1ECDc k\u1EF9 thu\u1EADt",
+    "Author": "L\u00EA V\u0103n C\u01B0\u1EDDng",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2022,
+    "Category": "K\u1EF9 thu\u1EADt",
+    "IsAvailable": true
+  },
+  {
+    "Id": 48,
+    "Title": "Tri\u1EBFt h\u1ECDc ph\u01B0\u01A1ng \u0110\u00F4ng",
+    "Author": "Nguy\u1EC5n V\u0103n Ph\u00FAc",
+    "Publisher": "NXB Ch\u00EDnh tr\u1ECB Qu\u1ED1c gia",
+    "Year": 2021,
+    "Category": "Tri\u1EBFt h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 49,
+    "Title": "Ch\u00FAa t\u1EC3 nh\u1EEFng chi\u1EBFc nh\u1EABn",
+    "Author": "J.R.R. Tolkien",
+    "Publisher": "NXB V\u0103n h\u1ECDc",
+    "Year": 2022,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": false
+  },
+  {
+    "Id": 50,
+    "Title": "\u0110\u1ECBa ch\u1EA5t h\u1ECDc",
+    "Author": "Ph\u1EA1m V\u0103n Th\u1EBF",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2023,
+    "Category": "\u0110\u1ECBa l\u00FD",
+    "IsAvailable": true
+  },
+  {
+    "Id": 51,
+    "Title": "K\u1EF9 thu\u1EADt ph\u1EA7n m\u1EC1m",
+    "Author": "Tr\u1EA7n V\u0103n \u0110\u1EA1t",
+    "Publisher": "NXB Th\u00F4ng tin v\u00E0 Truy\u1EC1n th\u00F4ng",
+    "Year": 2022,
+    "Category": "C\u00F4ng ngh\u1EC7 th\u00F4ng tin",
+    "IsAvailable": true
+  },
+  {
+    "Id": 52,
+    "Title": "M\u00F9a h\u00E8 kh\u00F4ng t\u00EAn",
+    "Author": "Nguy\u1EC5n Nh\u1EADt \u00C1nh",
+    "Publisher": "NXB Tr\u1EBB",
+    "Year": 2021,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 53,
+    "Title": "T\u00E0i ch\u00EDnh doanh nghi\u1EC7p",
+    "Author": "L\u00EA Th\u1ECB Nga",
+    "Publisher": "NXB T\u00E0i ch\u00EDnh",
+    "Year": 2023,
+    "Category": "T\u00E0i ch\u00EDnh",
+    "IsAvailable": false
+  },
+  {
+    "Id": 54,
+    "Title": "Sinh h\u1ECDc \u0111\u1ED9ng v\u1EADt",
+    "Author": "Nguy\u1EC5n V\u0103n Th\u1EAFng",
+    "Publisher": "NXB N\u00F4ng nghi\u1EC7p",
+    "Year": 2022,
+    "Category": "Sinh h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 55,
+    "Title": "Ti\u1EBFng H\u00E0n s\u01A1 c\u1EA5p",
+    "Author": "Tr\u1EA7n Th\u1ECB Y\u1EBFn",
+    "Publisher": "NXB T\u1EEB \u0111i\u1EC3n B\u00E1ch khoa",
+    "Year": 2023,
+    "Category": "Ngo\u1EA1i ng\u1EEF",
+    "IsAvailable": true
+  },
+  {
+    "Id": 56,
+    "Title": "Kinh t\u1EBF ch\u00EDnh tr\u1ECB",
+    "Author": "Ph\u1EA1m V\u0103n H\u1EA3i",
+    "Publisher": "NXB Ch\u00EDnh tr\u1ECB Qu\u1ED1c gia",
+    "Year": 2021,
+    "Category": "Ch\u00EDnh tr\u1ECB",
+    "IsAvailable": true
+  },
+  {
+    "Id": 57,
+    "Title": "\u0110i\u1EC7n t\u1EED t\u01B0\u01A1ng t\u1EF1",
+    "Author": "L\u00EA V\u0103n Minh",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2022,
+    "Category": "K\u1EF9 thu\u1EADt",
+    "IsAvailable": false
+  },
+  {
+    "Id": 58,
+    "Title": "T\u00E2m l\u00FD h\u1ECDc x\u00E3 h\u1ED9i",
+    "Author": "Nguy\u1EC5n Th\u1ECB Lan",
+    "Publisher": "NXB Gi\u00E1o d\u1EE5c Vi\u1EC7t Nam",
+    "Year": 2023,
+    "Category": "T\u00E2m l\u00FD h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 59,
+    "Title": "Ch\u00ED Ph\u00E8o",
+    "Author": "Nam Cao",
+    "Publisher": "NXB V\u0103n h\u1ECDc",
+    "Year": 2020,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 60,
+    "Title": "Qu\u1EA3n tr\u1ECB chi\u1EBFn l\u01B0\u1EE3c",
+    "Author": "Tr\u1EA7n V\u0103n Quang",
+    "Publisher": "NXB Lao \u0111\u1ED9ng",
+    "Year": 2023,
+    "Category": "Qu\u1EA3n tr\u1ECB",
+    "IsAvailable": true
+  },
+  {
+    "Id": 61,
+    "Title": "K\u1EF9 thu\u1EADt \u0111i\u1EC1u khi\u1EC3n",
+    "Author": "Ph\u1EA1m V\u0103n T\u00E0i",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2022,
+    "Category": "K\u1EF9 thu\u1EADt",
+    "IsAvailable": false
+  },
+  {
+    "Id": 62,
+    "Title": "Tri\u1EBFt h\u1ECDc T\u00E2y ph\u01B0\u01A1ng",
+    "Author": "L\u00EA V\u0103n Quang",
+    "Publisher": "NXB Ch\u00EDnh tr\u1ECB Qu\u1ED1c gia",
+    "Year": 2021,
+    "Category": "Tri\u1EBFt h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 63,
+    "Title": "H\u1EA1t gi\u1ED1ng t\u00E2m h\u1ED3n",
+    "Author": "Jack Canfield",
+    "Publisher": "NXB Ph\u1EE5 n\u1EEF",
+    "Year": 2022,
+    "Category": "K\u1EF9 n\u0103ng s\u1ED1ng",
+    "IsAvailable": true
+  },
+  {
+    "Id": 64,
+    "Title": "Kh\u00ED t\u01B0\u1EE3ng h\u1ECDc",
+    "Author": "Nguy\u1EC5n V\u0103n B\u1EA3o",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2023,
+    "Category": "\u0110\u1ECBa l\u00FD",
+    "IsAvailable": true
+  },
+  {
+    "Id": 65,
+    "Title": "C\u01A1 s\u1EDF d\u1EEF li\u1EC7u",
+    "Author": "Tr\u1EA7n Th\u1ECB H\u01B0\u01A1ng",
+    "Publisher": "NXB Th\u00F4ng tin v\u00E0 Truy\u1EC1n th\u00F4ng",
+    "Year": 2022,
+    "Category": "C\u00F4ng ngh\u1EC7 th\u00F4ng tin",
+    "IsAvailable": false
+  },
+  {
+    "Id": 66,
+    "Title": "T\u00F4i th\u1EA5y hoa v\u00E0ng tr\u00EAn c\u1ECF xanh",
+    "Author": "Nguy\u1EC5n Nh\u1EADt \u00C1nh",
+    "Publisher": "NXB Kim \u0110\u1ED3ng",
+    "Year": 2021,
+    "Category": "Thi\u1EBFu nhi",
+    "IsAvailable": true
+  },
+  {
+    "Id": 67,
+    "Title": "K\u1EBF to\u00E1n t\u00E0i ch\u00EDnh",
+    "Author": "L\u00EA Th\u1ECB Hoa",
+    "Publisher": "NXB T\u00E0i ch\u00EDnh",
+    "Year": 2023,
+    "Category": "T\u00E0i ch\u00EDnh",
+    "IsAvailable": true
+  },
+  {
+    "Id": 68,
+    "Title": "Sinh h\u1ECDc ph\u00E2n t\u1EED",
+    "Author": "Ph\u1EA1m V\u0103n \u0110i\u1EC1n",
+    "Publisher": "NXB Y h\u1ECDc",
+    "Year": 2022,
+    "Category": "Sinh h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 69,
+    "Title": "Ti\u1EBFng Ph\u00E1p c\u01A1 b\u1EA3n",
+    "Author": "Nguy\u1EC5n Th\u1ECB Thu",
+    "Publisher": "NXB T\u1EEB \u0111i\u1EC3n B\u00E1ch khoa",
+    "Year": 2023,
+    "Category": "Ngo\u1EA1i ng\u1EEF",
+    "IsAvailable": false
+  },
+  {
+    "Id": 70,
+    "Title": "Lu\u1EADt ph\u00E1p Vi\u1EC7t Nam",
+    "Author": "Tr\u1EA7n V\u0103n Lu\u1EADt",
+    "Publisher": "NXB Ch\u00EDnh tr\u1ECB Qu\u1ED1c gia",
+    "Year": 2021,
+    "Category": "Ph\u00E1p lu\u1EADt",
+    "IsAvailable": true
+  },
+  {
+    "Id": 71,
+    "Title": "K\u1EF9 thu\u1EADt \u0111i\u1EC7n",
+    "Author": "L\u00EA V\u0103n \u0110i\u1EC7n",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2022,
+    "Category": "K\u1EF9 thu\u1EADt",
+    "IsAvailable": true
+  },
+  {
+    "Id": 72,
+    "Title": "T\u00E2m l\u00FD h\u1ECDc nh\u1EADn th\u1EE9c",
+    "Author": "Nguy\u1EC5n Th\u1ECB B\u00EDch",
+    "Publisher": "NXB Gi\u00E1o d\u1EE5c Vi\u1EC7t Nam",
+    "Year": 2023,
+    "Category": "T\u00E2m l\u00FD h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 73,
+    "Title": "V\u1EE3 nh\u1EB7t",
+    "Author": "Kim L\u00E2n",
+    "Publisher": "NXB V\u0103n h\u1ECDc",
+    "Year": 2020,
+    "Category": "V\u0103n h\u1ECDc",
+    "IsAvailable": false
+  },
+  {
+    "Id": 74,
+    "Title": "Qu\u1EA3n tr\u1ECB t\u00E0i ch\u00EDnh",
+    "Author": "Ph\u1EA1m V\u0103n T\u00E0i",
+    "Publisher": "NXB Lao \u0111\u1ED9ng",
+    "Year": 2023,
+    "Category": "Qu\u1EA3n tr\u1ECB",
+    "IsAvailable": true
+  },
+  {
+    "Id": 75,
+    "Title": "K\u1EF9 thu\u1EADt c\u01A1 kh\u00ED",
+    "Author": "Tr\u1EA7n V\u0103n C\u01A1",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2022,
+    "Category": "K\u1EF9 thu\u1EADt",
+    "IsAvailable": true
+  },
+  {
+    "Id": 76,
+    "Title": "\u0110\u1EA1o \u0111\u1EE9c h\u1ECDc",
+    "Author": "L\u00EA V\u0103n \u0110\u1EA1o",
+    "Publisher": "NXB Ch\u00EDnh tr\u1ECB Qu\u1ED1c gia",
+    "Year": 2021,
+    "Category": "Tri\u1EBFt h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 77,
+    "Title": "L\u00E0m gi\u00E0u kh\u00F4ng kh\u00F3",
+    "Author": "Napoleon Hill",
+    "Publisher": "NXB Lao \u0111\u1ED9ng",
+    "Year": 2022,
+    "Category": "K\u1EF9 n\u0103ng s\u1ED1ng",
+    "IsAvailable": false
+  },
+  {
+    "Id": 78,
+    "Title": "H\u1EA3i d\u01B0\u01A1ng h\u1ECDc",
+    "Author": "Nguy\u1EC5n V\u0103n H\u1EA3i",
+    "Publisher": "NXB Khoa h\u1ECDc v\u00E0 K\u1EF9 thu\u1EADt",
+    "Year": 2023,
+    "Category": "\u0110\u1ECBa l\u00FD",
+    "IsAvailable": true
+  },
+  {
+    "Id": 81,
+    "Title": "Thu\u1EBF v\u00E0 k\u1EBF to\u00E1n thu\u1EBF",
+    "Author": "L\u00EA Th\u1ECB Thu\u1EBF",
+    "Publisher": "NXB T\u00E0i ch\u00EDnh",
+    "Year": 2023,
+    "Category": "T\u00E0i ch\u00EDnh",
+    "IsAvailable": false
+  },
+  {
+    "Id": 82,
+    "Title": "Sinh h\u1ECDc di truy\u1EC1n",
+    "Author": "Tr\u1EA7n V\u0103n Di",
+    "Publisher": "NXB Y h\u1ECDc",
+    "Year": 2022,
+    "Category": "Sinh h\u1ECDc",
+    "IsAvailable": true
+  },
+  {
+    "Id": 83,
+    "Title": "Ti\u1EBFng \u0110\u1EE9c c\u01A1 b\u1EA3n",
+    "Author": "Nguy\u1EC5n Th\u1ECB \u0110\u1EE9c",
+    "Publisher": "NXB T\u1EEB \u0111i\u1EC3n B\u00E1ch khoa",
+    "Year": 2023,
+    "Category": "Ngo\u1EA1i ng\u1EEF",
+    "IsAvailable": true
+  },
+  {
+    "Id": 84,
+    "Title": "H\u00E0nh ch\u00EDnh c\u00F4ng",
+    "Author": "Ph\u1EA1m V\u0103n H\u00E0nh",
+    "Publisher": "NXB Ch\u00EDnh tr\u1ECB Qu\u1ED1c gia",
+    "Year": 2021,
+    "Category": "Ch\u00EDnh tr\u1ECB",
+    "IsAvailable": true
+  }
+]
