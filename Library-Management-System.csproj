@@ -18,6 +18,7 @@
     <Folder Include="Data\Session\" />
     <Folder Include="Data\UserInfo\Emails\" />
     <Folder Include="Data\UserInfo\Members\" />
+    <Folder Include="TrashCan\" />
   </ItemGroup>
 
 </Project>
