@@ -65,5 +65,21 @@ namespace Library_Management_System.Utils
             string dataFolderPath = Get_Data_Directory();
             return Path.Combine(dataFolderPath, "Session");
         }
+
+        public static string Get_Data_Books_Directory()
+        {
+            // Lấy đường dẫn solution hiện tại.
+            // Trả về đường dẫn đến thư mục DataBooks trong thư mục gốc của giải pháp
+            string dataFolderPath = Get_Data_Directory();
+            return Path.Combine(dataFolderPath, "Books");
+        }
+
+        public static string Get_TrashCan_Directory()
+        {
+            // Lấy đường dẫn solution hiện tại.
+            // Trả về đường dẫn đến thư mục TrashCan trong thư mục gốc của giải pháp
+            string dataFolderPath = Get_Solution_Directory();
+            return Path.Combine(dataFolderPath, "TrashCan");
+        }
     }
 }
