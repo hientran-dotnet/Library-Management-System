@@ -1,4 +1,5 @@
-﻿using Library_Management_System.Services;
+﻿using Library_Management_System.Models;
+using Library_Management_System.Services;
 using Spectre.Console;
 using System;
 using System.Collections.Generic;
@@ -167,6 +168,41 @@ namespace Library_Management_System.Menu
                         "⚙️ Cài đặt hệ thống",
                         "🚪 Đăng xuất",
                         "❌ Thoát"
+                    }));
+
+            return choice;
+        }
+
+        // Menu Quản lý Sách
+        public static string ShowBookManagementMenu()
+        {
+            Console.Clear();
+
+            var headerPanel = new Panel("[bold yellow]📚 QUẢN LÝ SÁCH[/]")
+            {
+                Border = BoxBorder.Double,
+                BorderStyle = new Style(Color.Yellow)
+            };
+
+            AnsiConsole.Write(headerPanel);
+            AnsiConsole.WriteLine();
+
+            var choice = AnsiConsole.Prompt(
+                new SelectionPrompt<string>()
+                    .Title("[bold cyan]Chọn chức năng quản lý sách:[/]")
+                    .PageSize(10)
+                    .MoreChoicesText("[grey](Di chuyển lên xuống để xem thêm tùy chọn)[/]")
+                    .AddChoices(new[] {
+                        "➕ Thêm sách mới",
+                        "✏️ Sửa thông tin sách",
+                        "🗑️ Xóa sách",
+                        "📋 Danh sách tất cả sách",
+                        //"🔍 Tìm kiếm sách theo tên",
+                        //"👨‍💼 Tìm kiếm sách theo tác giả",
+                        //"📂 Tìm kiếm sách theo thể loại",
+                        //"📊 Thống kê sách theo thể loại",
+                        //"📈 Sách được mượn nhiều nhất",
+                        "🔙 Quay lại menu chính"
                     }));
 
             return choice;
