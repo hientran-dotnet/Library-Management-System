@@ -135,6 +135,47 @@ namespace Library_Management_System.Utils
             string newJson = JsonSerializer.Serialize(books, new JsonSerializerOptions { WriteIndented = true });
             File.WriteAllText(filePath, newJson);
         }
+        
+        public static List<Member> LoadAllMembers()
+        {
+            string filePath = Path.Combine(uDirectory.Get_Data_UserInfo_Members(), "Members.json");
+            if (!File.Exists(filePath))
+            {
+                return new List<Member>(); // Trả về danh sách rỗng nếu file không tồn tại
+            }
+
+            var json = File.ReadAllText(filePath);
+            return JsonSerializer.Deserialize<List<Member>>(json) ?? new List<Member>();
+        }
+
+        public static void SaveMemberToFile(Member member, string filePath)
+        {
+            List<Member> members = new List<Member>();
+            if (File.Exists(filePath))
+            {
+                var json = File.ReadAllText(filePath);
+                if (!string.IsNullOrWhiteSpace(json))
+                {
+                    members = JsonSerializer.Deserialize<List<Member>>(json) ?? new List<Member>();
+                }
+            }
+
+            // Tìm thành viên với ID tương ứng
+            int existingIndex = members.FindIndex(m => m.Id == member.Id);
+            if (existingIndex >= 0)
+            {
+                // Nếu thành viên đã tồn tại, cập nhật thông tin
+                members[existingIndex] = member;
+            }
+            else
+            {
+                // Nếu chưa tồn tại, thêm mới
+                members.Add(member);
+            }
+
+            string newJson = JsonSerializer.Serialize(members, new JsonSerializerOptions { WriteIndented = true });
+            File.WriteAllText(filePath, newJson);
+        }
     }
     
 }
