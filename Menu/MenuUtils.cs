@@ -181,7 +181,8 @@ namespace Library_Management_System.Menu
             var headerPanel = new Panel("[bold yellow]📚 QUẢN LÝ SÁCH[/]")
             {
                 Border = BoxBorder.Double,
-                BorderStyle = new Style(Color.Yellow)
+                BorderStyle = new Style(Color.Yellow),
+                Header = new PanelHeader("QUẢN LÝ SÁCH", Justify.Center)
             };
 
             AnsiConsole.Write(headerPanel);
@@ -202,6 +203,42 @@ namespace Library_Management_System.Menu
                         //"📂 Tìm kiếm sách theo thể loại",
                         //"📊 Thống kê sách theo thể loại",
                         //"📈 Sách được mượn nhiều nhất",
+                        "🔙 Quay lại menu chính"
+                    }));
+
+            return choice;
+        }
+
+        // Menu Quản lý Thành viên
+        public static string ShowMemberManagementMenu()
+        {
+            Console.Clear();
+            
+            var headerPanel = new Panel("[bold green]👥 QUẢN LÝ THÀNH VIÊN[/]")
+            {
+                Border = BoxBorder.Double,
+                BorderStyle = new Style(Color.Green),
+                Header = new PanelHeader("QUẢN LÝ THÀNH VIÊN", Justify.Center)
+            };
+            
+            AnsiConsole.Write(headerPanel);
+            AnsiConsole.WriteLine();
+
+            var choice = AnsiConsole.Prompt(
+                new SelectionPrompt<string>()
+                    .Title("[bold cyan]Chọn chức năng quản lý thành viên:[/]")
+                    .PageSize(10)
+                    .MoreChoicesText("[grey](Di chuyển lên xuống để xem thêm tùy chọn)[/]")
+                    .AddChoices(new[] {
+                        "➕ Thêm thành viên mới",
+                        "✏️ Sửa thông tin thành viên",
+                        "🗑️ Xóa thành viên",
+                        "📋 Danh sách tất cả thành viên",
+                        // "🔍 Tìm kiếm thành viên",
+                        // "📊 Thống kê thành viên theo loại",
+                        // "⚠️ Thành viên có sách quá hạn",
+                        // "🏆 Thành viên tích cực nhất",
+                        // "📧 Gửi thông báo cho thành viên",
                         "🔙 Quay lại menu chính"
                     }));
 
