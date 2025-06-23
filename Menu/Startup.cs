@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Library_Management_System.Models;
 
 namespace Library_Management_System.Menu
 {
@@ -62,7 +63,37 @@ namespace Library_Management_System.Menu
                                 }
                                 break;
                             case "👥 Quản lý Thành viên":
-                                MenuUtils.ShowErrorMessage("Chức năng đang phát triển !!");
+                                while (true)
+                                {
+                                    choice = MenuUtils.ShowMemberManagementMenu();
+                                    switch (choice)
+                                    {
+                                        case "➕ Thêm thành viên mới":
+                                            MemberService.addNewMember(); // Gọi phương thức thêm thành viên mới
+                                            break;
+                                        case "✏️ Sửa thông tin thành viên":
+                                            // MemberService.EditMember(); // Gọi phương thức sửa thông tin thành viên
+                                             // Hiển thị danh sách thành viên để sửa
+                                            MemberService.EditMember();
+                                            break;
+                                        case "🗑️ Xóa thành viên":
+                                            // MemberService.DeleteMember(); // Gọi phương thức xóa thành viên
+                                            MemberService.DeleteMember();   
+                                            break;
+                                        case "📋 Danh sách tất cả thành viên":
+                                            // MemberService.DisplayAllMembers(); // Hiển thị danh sách tất cả thành viên
+                                            break;
+                                        //case "🔍 Tìm kiếm thành viên":
+                                        //case "📊 Thống kê thành viên theo loại":
+                                        //case "⚠️ Thành viên có sách quá hạn":
+                                        //case "🏆 Thành viên tích cực nhất":
+                                        //case "📧 Gửi thông báo cho thành viên":
+                                        case "🔙 Quay lại menu chính":
+                                                break; // Quay lại menu chính
+                                    }
+                                    if(choice == "🔙 Quay lại menu chính")
+                                        break; // Thoát vòng lặp quản lý thành viên
+                                }
                                 break;
                             case "📖 Quản lý Mượn/Trả sách":
                                 MenuUtils.ShowErrorMessage("Chức năng đang phát triển !!");
