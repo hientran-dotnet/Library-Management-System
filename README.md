@@ -11,7 +11,7 @@
 - Quản lý mượn/trả sách: Lưu lịch sử mượn trả, kiểm soát tình trạng sách.
 - Tìm kiếm, lọc, sắp xếp sách (ứng dụng LINQ).
 - Lưu trữ dữ liệu ra file (text hoặc JSON).
-- Giao diện người dùng dạng menu console thân thiện.
+- Giao diện người dùng dạng menu console.
 
 ## 🛠️ Công nghệ sử dụng (Tech stack)
 
