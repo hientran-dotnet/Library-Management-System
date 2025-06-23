@@ -70,6 +70,18 @@
 
 
 =====================================================================================
+23-06-2025
+
+- Thêm phương thức Get chuỗi đường dẫn tới folder Members
+- Thêm phương thức lưu toàn bộ thông tin thành viên vào file json.
+- Thêm phương thức lấy toàn bộ thông tin thành viên hiện có
+- Thêm phương thức lấy thông tin thành viên theo id
+- Thêm phương thức sửa thông tin thành viên
+- Thêm phương thức lấy đường dẫn folder Trashcan của member
+- Thêm phương thức xóa thông tin thành viên.
+
+
+=====================================================================================
 ### NOTE:
 
 [16-06-2025]
