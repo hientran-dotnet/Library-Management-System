@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace Library_Management_System.Models
@@ -30,11 +31,22 @@ namespace Library_Management_System.Models
         //public void SetPhoneNumber(string? phoneNumber) => PhoneNumber = phoneNumber; // Số điện thoại thành viên
         //public void SetAddress(string? address) => Address = address; // Địa chỉ thành viên
 
+        [JsonPropertyName("ma_thanh_vien")]
         public string? Id { get; set; } // Mã thành viên
+        
+        [JsonPropertyName("ten_thanh_vien")]
         public string? Name { get; set; } // Tên thành viên
+        
         public string? username { get; set; } // Tên đăng nhập thành viên
+        
+        [JsonPropertyName("email")]
         public string? Email { get; set; } // Email thành viên
+        
+        
+        [JsonPropertyName("so_dien_thoai")]
         public string? PhoneNumber { get; set; } // Số điện thoại thành viên
+        
+        [JsonPropertyName("dia_chi")]
         public string? Address { get; set; } // Địa chỉ thành viên
 
     }
