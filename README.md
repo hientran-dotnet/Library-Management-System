@@ -1,4 +1,4 @@
-# Quản lý thư viện (Library Management System)
+# Quản lý thư viện (Library Management System).
 
 ## 📚 Giới thiệu
 
